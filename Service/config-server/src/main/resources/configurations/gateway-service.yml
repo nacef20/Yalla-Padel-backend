@@ -1,0 +1,74 @@
+server:
+  port: 8222
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        # Route pour les API REST
+        - id: chatgroup-service-api
+          uri: lb://chatgroup-service
+          predicates:
+            - Path=/chatPrivee/**
+
+        - id: chatgroup-service-message
+          uri: lb://chatgroup-service
+          predicates:
+            - Path=/messageGroup/**
+
+        - id: chatgroup-service-message
+          uri: lb://chatgroup-service
+          predicates:
+            - Path=/joinGroup/**
+
+        # Route pour les fichiers statiques
+        - id: chatgroup-service-static
+          uri: http://localhost:7070
+          predicates:
+            - Path=/uploads/**
+
+
+        - id: user-service-api
+          uri: lb://userservice
+          predicates:
+            - Path=/api/users/**
+
+        - id: chatgroup-service-group
+          uri: lb://chatgroup-service
+          predicates:
+          - Path=/membreGroupChat/**
+
+
+
+
+        - id: courses-service-api
+          uri: lb://courses-service
+          predicates:
+            - Path=/api/courses/**
+
+        - id: lessons-service-api
+          uri: lb://lessons-service
+          predicates:
+            - Path=/api/lessons/**
+
+
+
+
+
+
