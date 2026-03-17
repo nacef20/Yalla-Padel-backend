@@ -28,7 +28,7 @@ public class Ollamaservice {
         return chatModel.call(prompt);
     }
 
-    // ✅ Répondre à une question
+    //  Répondre à une question
     public String answerQuestion(String question) {
         String prompt = String.format(
                 "Answer the following question clearly and concisely. Reply only with the answer:\n\n%s",

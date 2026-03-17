@@ -11,6 +11,10 @@
         <option value="$PROJECT_DIR$/Service/userservice/pom.xml" />
         <option value="$PROJECT_DIR$/Service/coursesService/pom.xml" />
         <option value="$PROJECT_DIR$/Service/lessonsService/pom.xml" />
+        <option value="$PROJECT_DIR$/Service/Quiz_Microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Service/quiz/Quiz_Microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Service/Gestion_Planning/pom.xml" />
+        <option value="$PROJECT_DIR$/Service/gestiondoto/pom.xml" />
       </list>
     </option>
   </component>

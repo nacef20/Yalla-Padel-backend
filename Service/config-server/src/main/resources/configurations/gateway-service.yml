@@ -70,5 +70,62 @@ spring:
 
 
 
+        - id: ai-quiz-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/quizzes/ai/**
 
+        - id: attempt-answer-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/attempt-answers/**
 
+        - id: attempt-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/attempts/**
+
+        - id: certificate-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/certificates/**
+
+        - id: choice-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/choices/**
+
+        - id: question-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/questions/**
+
+        - id: quiz-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/quizzes/**
+
+        - id: stats-service-api
+          uri: lb://quiz-microservice
+          predicates:
+            - Path=/api/stats/**
+
+        - id: planing-service-api
+          uri: lb://gestionPlanning
+          predicates:
+              - Path=/creneaux/**
+
+        - id: planing-service-api
+          uri: lb://gestionPlanning
+          predicates:
+            - Path=/plannings/advanced/**
+
+        - id: planing-service-api
+          uri: lb://gestionPlanning
+          predicates:
+            - Path=/salles/**
+
+        - id: planing-service-api
+          uri: lb://gestionPlanning
+          predicates:
+            - Path=/plannings/**
