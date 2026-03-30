@@ -78,7 +78,6 @@ replay_pid*
 # -----------------------------
 **/.env
 **/.env.*
-**/application.properties
 **/application.yml
 **/application.yaml
 **/bootstrap.properties
