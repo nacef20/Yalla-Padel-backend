@@ -78,11 +78,15 @@ replay_pid*
 # -----------------------------
 **/.env
 **/.env.*
+**/application.properties
 **/application.yml
 **/application.yaml
 **/bootstrap.properties
 **/bootstrap.yml
 **/bootstrap.yaml
+
+# Keep EurekaServer application.properties tracked
+!EurekaServer/src/main/resources/application.properties
 
 # Keep template/example config files if used
 !**/.env.example
