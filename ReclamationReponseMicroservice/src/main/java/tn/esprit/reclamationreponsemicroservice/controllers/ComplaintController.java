@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tn.esprit.reclamationreponsemicroservice.entities.Complaint;
+import tn.esprit.reclamationreponsemicroservice.entities.ComplaintStatus;
 import tn.esprit.reclamationreponsemicroservice.services.IComplaintService;
 
 
@@ -34,6 +35,11 @@ public class ComplaintController {
     @GetMapping
     public ResponseEntity<List<Complaint>> getAllComplaints() {
         return ResponseEntity.ok(complaintService.getAllComplaints());
+    }
+
+    @GetMapping("/status/{status}")
+    public ResponseEntity<List<Complaint>> getByStatus(@PathVariable ComplaintStatus status) {
+        return ResponseEntity.ok(complaintService.getComplaintsByStatus(status));
     }
 
     @GetMapping("/{id}")

@@ -31,6 +31,11 @@ public class ComplaintServiceImplement implements IComplaintService {
     }
 
     @Override
+    public List<Complaint> getComplaintsByStatus(ComplaintStatus status) {
+        return complaintRepository.findByStatus(status);
+    }
+
+    @Override
     public Complaint getComplaintById(Long id) {
         return complaintRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Complaint not found with id: " + id));
