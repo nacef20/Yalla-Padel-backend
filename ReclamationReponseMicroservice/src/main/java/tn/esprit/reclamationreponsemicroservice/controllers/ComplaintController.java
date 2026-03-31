@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -40,6 +41,13 @@ public class ComplaintController {
     @GetMapping
     public ResponseEntity<List<Complaint>> getAllComplaints() {
         return ResponseEntity.ok(complaintService.getAllComplaints());
+    }
+
+    @GetMapping("/paginated")
+    public ResponseEntity<Page<Complaint>> getAllComplaintsPaginated(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "5") int size) {
+        return ResponseEntity.ok(complaintService.getAllComplaintsPaginated(page, size));
     }
 
     @GetMapping("/status/{status}")

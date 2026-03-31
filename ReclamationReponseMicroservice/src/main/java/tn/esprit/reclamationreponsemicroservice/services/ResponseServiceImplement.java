@@ -1,5 +1,8 @@
 package tn.esprit.reclamationreponsemicroservice.services;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import tn.esprit.reclamationreponsemicroservice.entities.Complaint;
 import tn.esprit.reclamationreponsemicroservice.entities.Response;
@@ -31,6 +34,12 @@ public class ResponseServiceImplement implements IResponseService {
         response.setId(null);
         response.setComplaint(complaint);
         return responseRepository.save(response);
+    }
+
+    @Override
+    public Page<Response> getAllResponsesPaginated(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return responseRepository.findAll(pageable);
     }
 
     @Override

@@ -2,6 +2,9 @@ package tn.esprit.reclamationreponsemicroservice.services;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import tn.esprit.reclamationreponsemicroservice.entities.Complaint;
 import tn.esprit.reclamationreponsemicroservice.entities.ComplaintStatus;
@@ -29,6 +32,12 @@ public class ComplaintServiceImplement implements IComplaintService {
     @Override
     public List<Complaint> getAllComplaints() {
         return complaintRepository.findAll();
+    }
+
+    @Override
+    public Page<Complaint> getAllComplaintsPaginated(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return complaintRepository.findAll(pageable);
     }
 
     @Override
