@@ -88,6 +88,9 @@ replay_pid*
 # Keep EurekaServer application.properties tracked
 !EurekaServer/src/main/resources/application.properties
 
+# Keep APIGateway application.properties tracked
+!APIGateway/src/main/resources/application.properties
+
 # Keep template/example config files if used
 !**/.env.example
 !**/application-example.properties
