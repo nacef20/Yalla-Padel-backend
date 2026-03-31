@@ -17,6 +17,8 @@ public interface IComplaintService {
 
     List<Complaint> getComplaintsByStatus(ComplaintStatus status);
 
+    List<Complaint> searchComplaints(ComplaintStatus status, String keyword, LocalDateTime startDate, LocalDateTime endDate);
+
     long countByStatus(ComplaintStatus status);
 
     long countTotalComplaints();

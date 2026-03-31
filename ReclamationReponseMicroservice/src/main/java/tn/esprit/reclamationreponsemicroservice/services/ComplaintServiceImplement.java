@@ -46,6 +46,12 @@ public class ComplaintServiceImplement implements IComplaintService {
     }
 
     @Override
+    public List<Complaint> searchComplaints(ComplaintStatus status, String keyword, LocalDateTime startDate,
+            LocalDateTime endDate) {
+        return complaintRepository.searchComplaints(status, keyword, startDate, endDate);
+    }
+
+    @Override
     public long countByStatus(ComplaintStatus status) {
         return complaintRepository.countByStatus(status);
     }

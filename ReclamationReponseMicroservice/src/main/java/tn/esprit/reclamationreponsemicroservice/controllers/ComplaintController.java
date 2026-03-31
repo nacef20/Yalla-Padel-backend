@@ -55,6 +55,15 @@ public class ComplaintController {
         return ResponseEntity.ok(complaintService.getComplaintsByStatus(status));
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<Complaint>> search(
+            @RequestParam(required = false) ComplaintStatus status,
+            @RequestParam(required = false) String keyword,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime startDate,
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime endDate) {
+        return ResponseEntity.ok(complaintService.searchComplaints(status, keyword, startDate, endDate));
+    }
+
     @GetMapping("/stats/status/{status}")
     public ResponseEntity<Long> countByStatus(@PathVariable ComplaintStatus status) {
         return ResponseEntity.ok(complaintService.countByStatus(status));
