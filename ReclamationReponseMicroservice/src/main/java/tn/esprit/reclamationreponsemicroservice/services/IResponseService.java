@@ -9,5 +9,7 @@ public interface IResponseService {
 
     Response getResponseById(Long id);
 
+    Response updateResponse(Long id, Response response);
+
     void deleteResponse(Long id);
 }

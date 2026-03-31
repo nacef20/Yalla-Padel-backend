@@ -40,6 +40,13 @@ public class ResponseServiceImplement implements IResponseService {
     }
 
     @Override
+    public Response updateResponse(Long id, Response response) {
+        Response existingResponse = getResponseById(id);
+        existingResponse.setMessage(response.getMessage());
+        return responseRepository.save(existingResponse);
+    }
+
+    @Override
     public void deleteResponse(Long id) {
         Response response = getResponseById(id);
         responseRepository.delete(response);
