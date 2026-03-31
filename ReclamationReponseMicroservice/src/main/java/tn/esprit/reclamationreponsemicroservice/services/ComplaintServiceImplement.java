@@ -1,5 +1,6 @@
 package tn.esprit.reclamationreponsemicroservice.services;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import org.springframework.stereotype.Service;
 import tn.esprit.reclamationreponsemicroservice.entities.Complaint;
@@ -33,6 +34,31 @@ public class ComplaintServiceImplement implements IComplaintService {
     @Override
     public List<Complaint> getComplaintsByStatus(ComplaintStatus status) {
         return complaintRepository.findByStatus(status);
+    }
+
+    @Override
+    public long countByStatus(ComplaintStatus status) {
+        return complaintRepository.countByStatus(status);
+    }
+
+    @Override
+    public long countTotalComplaints() {
+        return complaintRepository.count();
+    }
+
+    @Override
+    public long countComplaintsBetweenDates(LocalDateTime start, LocalDateTime end) {
+        return complaintRepository.countByCreatedAtBetween(start, end);
+    }
+
+    @Override
+    public double getUnprocessedRate() {
+        long total = complaintRepository.count();
+        if (total == 0) {
+            return 0.0;
+        }
+        long enAttente = complaintRepository.countByStatus(ComplaintStatus.EN_ATTENTE);
+        return (enAttente * 100.0) / total;
     }
 
     @Override

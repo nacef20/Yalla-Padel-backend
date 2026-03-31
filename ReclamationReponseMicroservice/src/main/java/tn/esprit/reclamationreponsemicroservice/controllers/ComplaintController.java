@@ -1,14 +1,19 @@
 package tn.esprit.reclamationreponsemicroservice.controllers;
 
+import java.time.LocalDateTime;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tn.esprit.reclamationreponsemicroservice.entities.Complaint;
@@ -40,6 +45,39 @@ public class ComplaintController {
     @GetMapping("/status/{status}")
     public ResponseEntity<List<Complaint>> getByStatus(@PathVariable ComplaintStatus status) {
         return ResponseEntity.ok(complaintService.getComplaintsByStatus(status));
+    }
+
+    @GetMapping("/stats/status/{status}")
+    public ResponseEntity<Long> countByStatus(@PathVariable ComplaintStatus status) {
+        return ResponseEntity.ok(complaintService.countByStatus(status));
+    }
+
+    @GetMapping("/stats/total")
+    public ResponseEntity<Long> countTotalComplaints() {
+        return ResponseEntity.ok(complaintService.countTotalComplaints());
+    }
+
+    @GetMapping("/stats/period")
+    public ResponseEntity<Long> countByPeriod(
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime start,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime end) {
+        return ResponseEntity.ok(complaintService.countComplaintsBetweenDates(start, end));
+    }
+
+    @GetMapping("/stats/unprocessed-rate")
+    public ResponseEntity<Double> getUnprocessedRate() {
+        return ResponseEntity.ok(complaintService.getUnprocessedRate());
+    }
+
+    @GetMapping("/stats/dashboard")
+    public ResponseEntity<Map<String, Object>> getDashboardStats() {
+        Map<String, Object> dashboard = new LinkedHashMap<>();
+        dashboard.put("total", complaintService.countTotalComplaints());
+        dashboard.put("en_attente", complaintService.countByStatus(ComplaintStatus.EN_ATTENTE));
+        dashboard.put("traitee", complaintService.countByStatus(ComplaintStatus.TRAITEE));
+        dashboard.put("rejetee", complaintService.countByStatus(ComplaintStatus.REJETEE));
+        dashboard.put("unprocessedRate", complaintService.getUnprocessedRate());
+        return ResponseEntity.ok(dashboard);
     }
 
     @GetMapping("/{id}")
