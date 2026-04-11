@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="452b80dd-198e-4e7b-afe3-c77f31438d9b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jungle-in-english-backend-nacef.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/CryptoUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/Dto/GroupChatDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/Dto/GroupMemberDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/Dto/JoinGroupDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/Dto/MessageGroupDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/Exception/GroupChatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/GestionGroupeChatApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/Ollama/Ollamaservice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/WebMvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/controller/ChatWebSocketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/controller/GroupChatController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/controller/GroupMembreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/controller/JoinGroupController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/controller/MessageGroupController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/controller/UploadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/entities/GroupChat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/entities/GroupMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/entities/JoinGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/entities/MessageGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/entities/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/entities/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/mapper/GroupChatMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/mapper/GroupMemberMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/mapper/JoinGroupMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/mapper/MessageGroupMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/repository/GroupChatRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/repository/JoinGroupRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/repository/MembreGroupRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/repository/MessageRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/GroupChatService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/GroupeMenbreService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/IJoinGroupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/InGroupChat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/InGroupMembre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/InMessageGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/JoinGroupServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/service/MessageGroupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/java/tn/esprit/gestiongroupechat/websocket/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/src/test/java/tn/esprit/gestiongroupechat/GestionGroupeChatApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772403323170_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772403509345_xampp-logo-11609383422lj7pwtjrpy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772548503841_utilisateur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772549416443_utilisateur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772549654944_utilisateur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772713558620_groupe-d-enfants-et-multi-concept-anglais-ec79dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/1772713559069_groupe-d-enfants-et-multi-concept-anglais-ec79dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/GestionGroupeChat/uploads/images/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/API_DOCUMENTATION.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Controllers/CreneauHoraireController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Controllers/PlanningAdvancedController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Controllers/PlanningSessionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Controllers/SalleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/DTO/AssignmentRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/DTO/GenerationResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/DTO/PlanningGeneratorRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/DTO/SemesterReplicationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/DTO/SemesterReplicationResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/DTO/WeeklyLoadReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/CreneauHoraire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/DisponibiliteSalle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/Equipement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/JourSemaine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/PlanningSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/Salle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/StatutPlanning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Entites/TypeCreneau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/GestionPlanningApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Repositories/CreneauRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Repositories/PlanningSessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Repositories/SalleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/CreneauHoraireServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/ICreneauHoraireService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/IPlanningAdvancedService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/IPlanningSessionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/ISalleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/PlanningAdvancedServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/PlanningPdfService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/PlanningSessionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/java/tn/esprit/gestion_planning/Services/SalleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Gestion_Planning/src/test/java/tn/esprit/gestion_planning/GestionPlanningApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/QuizMicroserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/AiQuizController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/AttemptAnswerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/AttemptController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/CertificateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/ChoiceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/QuestionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/QuizController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/controller/StatsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/AiQuizRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/AiQuizResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/DashboardStatsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/FailedQuestionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/GradeDistributionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/QuizStatsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/StudentStatsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/dto/SubmitQuizRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/Attempt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/AttemptAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/Certificate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/Choice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/Quiz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/entities/QuizStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/repositories/AttemptAnswerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/repositories/AttemptRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/repositories/CertificateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/repositories/ChoiceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/repositories/QuestionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/repositories/QuizRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/AiQuizGeneratorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/AttemptAnswerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/AttemptExcelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/AttemptPdfService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/AttemptServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/CertificateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/ChoiceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/IAttemptAnswerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/IAttemptService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/IChoiceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/IQuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/IQuizService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/IStatsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/QuestionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/QuizAttemptService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/QuizServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/java/tn/esprit/quiz_microservice/service/StatsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/main/resources/static/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Quiz_Microservice/src/test/java/tn/esprit/quiz_microservice/QuizMicroserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/chatgroup-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/courses-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/gestionPlanning.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/lessons-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/quiz-microservice.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/userservice.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/config-server/src/main/resources/configurations/userservice.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/CoursesServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/config/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/controllers/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/entities/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/entities/CourseLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/repositories/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/java/com/fluently/coursesservice/services/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/coursesService/src/test/java/com/fluently/coursesservice/CoursesServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/compile-utf8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/compile.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/compile_error.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/compile_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/compile_output_v2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/TodomoduleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/controller/AnalyticsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/controller/ReminderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/controller/TodoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/dto/AnalyticsStudentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/dto/AnalyticsTeacherDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/dto/CreateReminderRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/dto/TodoStatsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/Level.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/Priority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/Reminder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/Todo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/TodoStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/repository/ReminderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/repository/TodoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/service/AnalyticsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/service/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/service/ReminderScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/service/ReminderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/java/tn/esprit/todomodule/service/TodoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestiondoto/src/test/java/tn/esprit/todomodule/TodomoduleApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/fix-notifications.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/TaskMangerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/config/JwtAuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/config/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/CVController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/CompetenceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/DiplomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/ExperienceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/JobOfferController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/NiveauLangueController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/NotificationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/ProfilAnalyseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/StatistiquesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/CV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/CVMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/Competence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/Diplome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/Experience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/JobOffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/NiveauLangue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/ProfilAnalyse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/RecipientRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/Statistiques.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/CVMatchRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/CVRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/CompetenceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/DiplomeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/ExperienceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/JobOfferRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/NiveauLangueRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/NotificationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/ProfilAnalyseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/StatistiquesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/CVService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/CompetenceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/CustomUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/DiplomeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/ExperienceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/JobOfferService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/NiveauLangueService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/ProfilAnalyseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/StatistiquesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/java/com/example/taskmanger/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/gestionrecrutment/src/test/java/com/example/taskmanger/TaskMangerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/LessonsServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/client/CoursesServiceClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/config/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/config/RestTemplateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/controllers/LessonAttachmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/controllers/LessonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/controllers/progress/ProgressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/CourseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/AttachmentCompleteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/CourseCompletionRateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/CourseProgressSummaryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/LessonCompleteRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/LessonDifficultyDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/LessonDifficultyRowDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/LessonHeartbeatRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/progress/LessonStartRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/dto/reco/CourseLiteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/entities/AttachmentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/entities/Lesson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/entities/LessonAttachment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/entities/progress/AttachmentProgress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/entities/progress/LessonProgress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/entities/progress/ProgressStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/repositories/LessonAttachmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/repositories/LessonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/repositories/progress/AttachmentProgressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/repositories/progress/LessonProgressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/services/ILessonAttachmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/services/ILessonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/services/LessonAttachmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/services/LessonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/services/progress/IProgressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/java/com/fluently/lessonsservice/services/progress/ProgressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/lessonsService/src/test/java/com/fluently/lessonsservice/LessonsServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/userservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service/userservice/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chirinedardouri&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nacef20/jungle-in-english-backend.git&quot;,
+    &quot;accountId&quot;: &quot;cb778f2e-344d-486e-944a-3ecf1e597863&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3BVRUPZTBOVzygTkHesEj266Rya" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coursesService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coursesService [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eventmodule [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eventmodule [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lessonsService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lessonsService [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.userservice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.userservice [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CoursesServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EventModuleApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GestionGroupeChatApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LessonsServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;integration-final-sprint1&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chiri/IdeaProjects/yallapadel-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\IdeaProjects\yallapadel-backend\Service\eventmodule\src\main\java\tn\esprit" />
+      <recent name="C:\Users\chiri\IdeaProjects\yallapadel-backend\Service\eventmodule\src\main\java\tn\esprit\eventmodule" />
+      <recent name="C:\Users\chiri\IdeaProjects\yallapadel-backend\Service\eventmodule\src\main\java" />
+      <recent name="C:\Users\chiri\IdeaProjects\yallapadel-backend\Service\eventmodule\src\main\resources" />
+      <recent name="C:\Users\chiri\IdeaProjects\yallapadel-backend\Service\eventmodule\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chiri\IdeaProjects\yallapadel-backend\Service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EventModuleApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.configserver.ConfigServerApplication" />
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventModuleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="eventmodule" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.eventmodule.EventmoduleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="userservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.userservice.UserserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.EventModuleApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.DiscoveryApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.UserserviceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConfigServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="452b80dd-198e-4e7b-afe3-c77f31438d9b" name="Changes" comment="" />
+      <created>1774572266463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774572266463</updated>
+      <workItem from="1774572268044" duration="3423000" />
+      <workItem from="1774628006779" duration="1328000" />
+      <workItem from="1774655618976" duration="3559000" />
+      <workItem from="1774721345423" duration="8602000" />
+      <workItem from="1774730182238" duration="10772000" />
+      <workItem from="1774802877107" duration="3665000" />
+      <workItem from="1774812298667" duration="6419000" />
+      <workItem from="1774898289636" duration="8890000" />
+      <workItem from="1774912026608" duration="6341000" />
+      <workItem from="1774940564929" duration="11686000" />
+      <workItem from="1775039012085" duration="20000" />
+      <workItem from="1775251258659" duration="399000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

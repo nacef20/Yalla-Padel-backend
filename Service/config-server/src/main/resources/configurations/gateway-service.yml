@@ -1,0 +1,36 @@
+server:
+  port: 8222
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service-api
+          uri: lb://userservice
+          predicates:
+            - Path=/api/users/**
+
+
+
+
+
+        - id: eventmodule-api
+          uri: lb://eventmodule
+          predicates:
+            - Path=/api/evenements/**, /api/participations/**
