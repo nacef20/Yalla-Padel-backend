@@ -4,10 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import tn.esprit.gestiongroupechat.Dto.JoinGroupDTO;
-import tn.esprit.gestiongroupechat.entities.GroupChat;
-import tn.esprit.gestiongroupechat.entities.GroupMember;
-import tn.esprit.gestiongroupechat.entities.JoinGroup;
-import tn.esprit.gestiongroupechat.entities.Status;
+import tn.esprit.gestiongroupechat.JoinGroupProducer;
+import tn.esprit.gestiongroupechat.entities.*;
 import tn.esprit.gestiongroupechat.mapper.GroupChatMapper;
 import tn.esprit.gestiongroupechat.mapper.JoinGroupMapper;
 import tn.esprit.gestiongroupechat.repository.GroupChatRepo;
@@ -26,27 +24,47 @@ public class JoinGroupServiceImpl implements IJoinGroupService {
     private final GroupChatRepo groupChatRepo;
     private final JoinGroupMapper joinGroupMapper;
     private final MembreGroupRepo membreGroupRepo;
-
+    private final UserClient userClient;
+    private final JoinGroupProducer joinGroupProducer;
 
     @Override
     public JoinGroupDTO addRequest(JoinGroupDTO dto) {
-        // Récupérer le group chat
+
         GroupChat groupChat = groupChatRepo.findById(dto.groupChatId())
                 .orElseThrow(() -> new RuntimeException("GroupChat not found"));
 
-
         JoinGroup entity = joinGroupMapper.toEntity(dto);
         entity.setGroupChat(groupChat);
-
-
         entity.setStatus(Status.ATTENTE);
 
-        // Enregistrer
         JoinGroup saved = joinGroupRepo.save(entity);
+
+        // 🔥 FEIGN CALL
+        String adminEmail = getAdminEmail(groupChat.getId());
+
+        System.out.println("ADMIN EMAIL = " + adminEmail);
+
+        // 🔥 RABBIT EVENT
+        JoinGroupEvent event = new JoinGroupEvent();
+        event.setGroupId(groupChat.getId());
+        event.setGroupName(groupChat.getName());
+        event.setUserId(dto.userId());
+        event.setAdminEmail(adminEmail);
+
+        // 🔥 SEND ASYNC
+        joinGroupProducer.sendEvent(event);
 
         return joinGroupMapper.toDTO(saved);
     }
+    public String getAdminEmail(Long groupId) {
 
+        GroupChat groupChat = groupChatRepo.findById(groupId)
+                .orElseThrow(() -> new RuntimeException("Group not found"));
+
+        String adminId = groupChat.getOwnerId();
+
+        return userClient.getUserEmailById(adminId);
+    }
 
     @Override
     public Status getStatusByUserAndGroup(String  userId, Long groupChatId) {

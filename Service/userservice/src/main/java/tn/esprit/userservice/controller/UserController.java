@@ -1,11 +1,10 @@
 package tn.esprit.userservice.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import tn.esprit.userservice.service.KeycloakUserService;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -19,15 +18,59 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public Object getUser(@PathVariable String id) {
+    public ResponseEntity<?> getUser(@PathVariable String id) {
         var user = userService.getUserById(id);
 
-        return Map.of(
+        if (user == null) {
+            return ResponseEntity.status(404).body("User not found");
+        }
+
+        return ResponseEntity.ok(Map.of(
                 "id", user.getId(),
                 "username", user.getUsername(),
                 "firstName", user.getFirstName(),
                 "lastName", user.getLastName(),
                 "email", user.getEmail()
-        );
+        ));
     }
+
+
+    @GetMapping
+    public ResponseEntity<List<Map<String, Object>>> getAllUsers() {
+        return ResponseEntity.ok(userService.getAllUsers());
+    }
+
+    public record CreateUserRequest(
+            String username,
+            String email,
+            String firstName,
+            String lastName,
+            String password
+    ) {
+    }
+
+    @PostMapping("/add")
+    public ResponseEntity<?> createUser(@RequestBody CreateUserRequest request) {
+        try {
+            userService.createUser(
+                    request.username(),
+                    request.email(),
+                    request.firstName(),
+                    request.lastName(),
+                    request.password()
+            );
+            return ResponseEntity.status(201).body(Map.of("message", "Utilisateur créé avec succès"));
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+
+
+    }
+
+    @GetMapping("/{id}/email")
+    public ResponseEntity<String> getUserEmailById(@PathVariable String id) {
+        String email = userService.getUserEmailById(id);
+        return ResponseEntity.ok(email);
+    }
+
 }

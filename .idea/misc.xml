@@ -15,7 +15,14 @@
         <option value="$PROJECT_DIR$/Service/quiz/Quiz_Microservice/pom.xml" />
         <option value="$PROJECT_DIR$/Service/Gestion_Planning/pom.xml" />
         <option value="$PROJECT_DIR$/Service/gestiondoto/pom.xml" />
+        <option value="$PROJECT_DIR$/Service/forumService/pom.xml" />
+        <option value="$PROJECT_DIR$/Service/email-service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Service/coursesService/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
