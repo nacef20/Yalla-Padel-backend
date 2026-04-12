@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: userservice
+  cloud:
+    config:
+      enabled: false
+
+server:
+  port: 2020

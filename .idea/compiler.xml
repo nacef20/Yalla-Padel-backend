@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="discovery" />
+        <module name="gateway" />
+        <module name="userservice" />
+        <module name="email-service" />
+      </profile>
+      <profile name="Annotation profile for GestionGroupeChat" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="GestionGroupeChat" />
+      </profile>
+      <profile name="Annotation profile for recrutement-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
+        </processorPath>
+        <module name="recrutement-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coursesService" target="17" />
+      <module name="forumService" target="17" />
+      <module name="Gestion_Planning" target="17" />
+      <module name="lessonsService" target="17" />
+      <module name="Quiz_Microservice" target="17" />
+      <module name="todomodule" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="GestionGroupeChat" options="-parameters" />
+      <module name="Gestion_Planning" options="-parameters" />
+      <module name="Quiz_Microservice" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="coursesService" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="email-service" options="-parameters" />
+      <module name="forumService" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="lessonsService" options="-parameters" />
+      <module name="recrutement-service" options="-parameters" />
+      <module name="todomodule" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,75 @@
+server:
+  port: 8222
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        # Route pour les API REST
+        - id: chatgroup-service-api
+          uri: lb://chatgroup-service
+          predicates:
+            - Path=/chatPrivee/**
+
+        - id: chatgroup-service-message
+          uri: lb://chatgroup-service
+          predicates:
+            - Path=/messageGroup/**
+
+        - id: chatgroup-service-message
+          uri: lb://chatgroup-service
+          predicates:
+            - Path=/joinGroup/**
+
+
+        - id: chatgroup-service-messageWebsocket
+          uri: lb:ws://chatgroup-service
+          predicates:
+            - Path=/ws/**
+        # Route pour les fichiers statiques
+        - id: chatgroup-service-static
+          uri: http://localhost:7070
+          predicates:
+            - Path=/uploads/**
+
+
+        - id: user-service-api
+          uri: lb://userservice
+          predicates:
+            - Path=/api/users/**
+
+        - id: chatgroup-service-group
+          uri: lb://chatgroup-service
+          predicates:
+          - Path=/membreGroupChat/**
+
+        - id: reservation-service
+          uri: lb://RESERVATION-SERVICE
+          predicates:
+            - Path=/reservations/**
+
+        - id: terrain-service
+          uri: lb://RESERVATION-SERVICE
+          predicates:
+            - Path=/clubs/**
+
+        - id: recrutement-service
+          uri: lb://recrutement-service
+          predicates:
+            - Path=/api/jobs/**, /api/cvs/**, /api/auth/**, /api/diplome/**, /api/skills/**, /api/experience/**, /api/statistiques/**, /api/notifications/**, /api/profil-analyse/**
