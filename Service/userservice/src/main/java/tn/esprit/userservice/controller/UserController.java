@@ -65,7 +65,6 @@ public class UserController {
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
         }
-        );
     }
     @GetMapping("/me")
     public Object getCurrentUser(@AuthenticationPrincipal Jwt jwt) {

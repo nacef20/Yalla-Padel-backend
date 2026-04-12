@@ -37,7 +37,6 @@ spring:
           predicates:
             - Path=/joinGroup/**
 
-
         - id: chatgroup-service-messageWebsocket
           uri: lb:ws://chatgroup-service
           predicates:
@@ -47,7 +46,6 @@ spring:
           uri: http://localhost:7070
           predicates:
             - Path=/uploads/**
-
 
         - id: user-service-api
           uri: lb://userservice
@@ -64,14 +62,14 @@ spring:
           predicates:
             - Path=/reservations/**
 
-
-
         - id: eventmodule-api
           uri: lb://eventmodule
+          predicates:
+            - Path=/api/evenements/**, /api/participations/**
+
         - id: terrain-service
           uri: lb://RESERVATION-SERVICE
           predicates:
-            - Path=/api/evenements/**, /api/participations/**
             - Path=/clubs/**
 
         - id: recrutement-service

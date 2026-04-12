@@ -37,7 +37,7 @@ public class ParticipationController {
     }
 
     @GetMapping("/find")
-    public ResponseEntity<Participation> findById(@RequestParam Long id) {
+    public ResponseEntity<Participation> findById(@RequestParam("id") Long id) {
         return ResponseEntity.ok(participationService.findById(id));
     }
 
