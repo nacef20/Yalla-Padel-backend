@@ -3,6 +3,8 @@ package tn.esprit.userservice.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.userservice.service.KeycloakUserService;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 
 import java.util.List;
 import java.util.Map;
@@ -63,8 +65,19 @@ public class UserController {
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
         }
+        );
+    }
+    @GetMapping("/me")
+    public Object getCurrentUser(@AuthenticationPrincipal Jwt jwt) {
 
-
+        return Map.of(
+                "id", jwt.getSubject(),
+                "username", jwt.getClaimAsString("preferred_username"),
+                "firstName", jwt.getClaimAsString("given_name"),
+                "lastName", jwt.getClaimAsString("family_name"),
+                "email", jwt.getClaimAsString("email"),
+                "roles", jwt.getClaimAsMap("realm_access").get("roles")
+        );
     }
 
     @GetMapping("/{id}/email")

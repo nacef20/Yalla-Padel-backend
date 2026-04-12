@@ -64,9 +64,14 @@ spring:
           predicates:
             - Path=/reservations/**
 
+
+
+        - id: eventmodule-api
+          uri: lb://eventmodule
         - id: terrain-service
           uri: lb://RESERVATION-SERVICE
           predicates:
+            - Path=/api/evenements/**, /api/participations/**
             - Path=/clubs/**
 
         - id: recrutement-service
