@@ -1,0 +1,631 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.example:recrutement-service >-------------------
+[INFO] Building recrutement-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ recrutement-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ recrutement-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 49 source files with javac [debug parameters release 19] to target\classes
+[INFO] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/config/SecurityConfig.java: C:\Users\ILYES\OneDrive\Bureau\ilyes_integrÚ\Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1\Service\recrutement-service\src\main\java\tn\esprit\recrutement\config\SecurityConfig.java uses or overrides a deprecated API.
+[INFO] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/RecrutementApplication.java:[7,8] class TaskMangerApplication is public, should be declared in a file named TaskMangerApplication.java
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[80,40] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[83,22] cannot find symbol
+  symbol:   method setMatchScore(double)
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[94,31] cannot find symbol
+  symbol:   method getJobOffer()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[96,26] cannot find symbol
+  symbol:   method getMatchDate()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[96,75] cannot find symbol
+  symbol:   method getMatchDate()
+  location: class com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[42,11] cannot find symbol
+  symbol:   method setCandidate(com.example.taskmanger.model.User)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[43,11] cannot find symbol
+  symbol:   method setContent(java.lang.String)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[44,11] cannot find symbol
+  symbol:   method setUploadDate(java.util.Date)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[58,11] cannot find symbol
+  symbol:   method setSkills(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[59,11] cannot find symbol
+  symbol:   method setExperiences(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[60,11] cannot find symbol
+  symbol:   method setEducation(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[61,11] cannot find symbol
+  symbol:   method setLanguages(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[62,11] cannot find symbol
+  symbol:   method setCertifications(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[87,11] cannot find symbol
+  symbol:   method setCandidate(com.example.taskmanger.model.User)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[88,11] cannot find symbol
+  symbol:   method setContent(java.lang.String)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[89,11] cannot find symbol
+  symbol:   method setUploadDate(java.util.Date)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[103,11] cannot find symbol
+  symbol:   method setSkills(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[104,11] cannot find symbol
+  symbol:   method setExperiences(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[105,11] cannot find symbol
+  symbol:   method setEducation(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[106,11] cannot find symbol
+  symbol:   method setLanguages(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[107,11] cannot find symbol
+  symbol:   method setCertifications(java.util.Set<java.lang.String>)
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[233,54] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable m2 of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[233,74] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable m1 of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[240,71] cannot find symbol
+  symbol:   method getId()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[243,26] cannot find symbol
+  symbol:   method getCv()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[245,61] cannot find symbol
+  symbol:   method getSkills()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[245,78] cannot find symbol
+  symbol:   method getRequiredSkills()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[245,102] cannot find symbol
+  symbol:   method getContent()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[249,52] cannot find symbol
+  symbol:   method getExperiences()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[249,74] cannot find symbol
+  symbol:   method getExperienceLevel()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[249,99] cannot find symbol
+  symbol:   method getContent()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[250,67] cannot find symbol
+  symbol:   method getEducation()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[250,87] cannot find symbol
+  symbol:   method getRequiredQualifications()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[251,65] cannot find symbol
+  symbol:   method getLanguages()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[251,85] cannot find symbol
+  symbol:   method getRequiredLanguages()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[253,55] cannot find symbol
+  symbol:   method getCertifications()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[253,80] cannot find symbol
+  symbol:   method getRequiredCertifications()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[254,22] cannot find symbol
+  symbol:   method setMatchScore(double)
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[262,14] cannot find symbol
+  symbol:   method setCv(com.example.taskmanger.model.CV)
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[263,14] cannot find symbol
+  symbol:   method setJobOffer(com.example.taskmanger.model.JobOffer)
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[266,53] cannot find symbol
+  symbol:   method getSkills()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[266,70] cannot find symbol
+  symbol:   method getRequiredSkills()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[266,94] cannot find symbol
+  symbol:   method getContent()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[268,44] cannot find symbol
+  symbol:   method getExperiences()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[268,66] cannot find symbol
+  symbol:   method getExperienceLevel()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[268,91] cannot find symbol
+  symbol:   method getContent()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[269,59] cannot find symbol
+  symbol:   method getEducation()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[269,79] cannot find symbol
+  symbol:   method getRequiredQualifications()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[270,57] cannot find symbol
+  symbol:   method getLanguages()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[270,77] cannot find symbol
+  symbol:   method getRequiredLanguages()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[272,47] cannot find symbol
+  symbol:   method getCertifications()
+  location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[272,72] cannot find symbol
+  symbol:   method getRequiredCertifications()
+  location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[275,14] cannot find symbol
+  symbol:   method setMatchScore(double)
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[276,14] cannot find symbol
+  symbol:   method setMatchDate(java.util.Date)
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[284,34] cannot find symbol
+  symbol:   method getSkillsMatch()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[285,32] cannot find symbol
+  symbol:   method getExperienceMatch()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[286,32] cannot find symbol
+  symbol:   method getEducationMatch()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[287,39] cannot find symbol
+  symbol:   method getLanguageMatch()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[287,66] cannot find symbol
+  symbol:   method getCertificationMatch()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[23,45] cannot find symbol
+  symbol:   method getName()
+  location: variable candidate of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[23,75] cannot find symbol
+  symbol:   method getName()
+  location: variable candidate of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[24,40] cannot find symbol
+  symbol:   method getTitle()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[24,70] cannot find symbol
+  symbol:   method getTitle()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[25,29] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[26,47] cannot find symbol
+  symbol:   method getMatchDate()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[26,78] cannot find symbol
+  symbol:   method getMatchDate()
+  location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[27,33] cannot find symbol
+  symbol:   method getEmployer()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[28,57] cannot find symbol
+  symbol:   method getId()
+  location: variable employer of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[30,35] cannot find symbol
+  symbol:   method getId()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[30,62] cannot find symbol
+  symbol:   method getId()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[31,48] cannot find symbol
+  symbol:   method builder()
+  location: class com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[43,45] cannot find symbol
+  symbol:   method builder()
+  location: class com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[71,49] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[88,49] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[101,22] cannot find symbol
+  symbol:   method setRead(boolean)
+  location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[110,14] cannot find symbol
+  symbol:   method getRecipientRole()
+  location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[111,60] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[111,73] cannot find symbol
+  symbol:   method getEmployerId()
+  location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[113,14] cannot find symbol
+  symbol:   method getRecipientRole()
+  location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[43,21] cannot find symbol
+  symbol:   method getClosingDate()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[43,58] cannot find symbol
+  symbol:   method getClosingDate()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[79,21] cannot find symbol
+  symbol:   method getClosingDate()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[79,58] cannot find symbol
+  symbol:   method getClosingDate()
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[82,17] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[119,31] cannot find symbol
+  symbol:   method getJobOffer()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[119,58] cannot find symbol
+  symbol:   method getJobOffer()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[125,18] cannot find symbol
+  symbol:   method getCv()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[125,39] cannot find symbol
+  symbol:   method getCv()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[126,50] cannot find symbol
+  symbol:   method getCv()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[130,22] cannot find symbol
+  symbol:   method getMatchScore()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[131,26] cannot find symbol
+  symbol:   method getSkillsMatch()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[131,53] cannot find symbol
+  symbol:   method getExperienceMatch()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[136,26] cannot find symbol
+  symbol:   method getMatchDate()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[136,87] cannot find symbol
+  symbol:   method getMatchDate()
+  location: class com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[150,26] cannot find symbol
+  symbol:   method getCv()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[150,47] cannot find symbol
+  symbol:   method getCv()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[151,58] cannot find symbol
+  symbol:   method getCv()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[153,34] cannot find symbol
+  symbol:   method getMatchDate()
+  location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[153,95] cannot find symbol
+  symbol:   method getMatchDate()
+  location: class com.example.taskmanger.model.CVMatch
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.411 s
+[INFO] Finished at: 2026-03-27T12:49:10+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile (default-compile) on project recrutement-service: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/RecrutementApplication.java:[7,8] class TaskMangerApplication is public, should be declared in a file named TaskMangerApplication.java
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[80,40] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[83,22] cannot find symbol
+[ERROR]   symbol:   method setMatchScore(double)
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[94,31] cannot find symbol
+[ERROR]   symbol:   method getJobOffer()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[96,26] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/CVController.java:[96,75] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: class com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[42,11] cannot find symbol
+[ERROR]   symbol:   method setCandidate(com.example.taskmanger.model.User)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[43,11] cannot find symbol
+[ERROR]   symbol:   method setContent(java.lang.String)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[44,11] cannot find symbol
+[ERROR]   symbol:   method setUploadDate(java.util.Date)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[58,11] cannot find symbol
+[ERROR]   symbol:   method setSkills(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[59,11] cannot find symbol
+[ERROR]   symbol:   method setExperiences(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[60,11] cannot find symbol
+[ERROR]   symbol:   method setEducation(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[61,11] cannot find symbol
+[ERROR]   symbol:   method setLanguages(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[62,11] cannot find symbol
+[ERROR]   symbol:   method setCertifications(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[87,11] cannot find symbol
+[ERROR]   symbol:   method setCandidate(com.example.taskmanger.model.User)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[88,11] cannot find symbol
+[ERROR]   symbol:   method setContent(java.lang.String)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[89,11] cannot find symbol
+[ERROR]   symbol:   method setUploadDate(java.util.Date)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[103,11] cannot find symbol
+[ERROR]   symbol:   method setSkills(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[104,11] cannot find symbol
+[ERROR]   symbol:   method setExperiences(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[105,11] cannot find symbol
+[ERROR]   symbol:   method setEducation(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[106,11] cannot find symbol
+[ERROR]   symbol:   method setLanguages(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[107,11] cannot find symbol
+[ERROR]   symbol:   method setCertifications(java.util.Set<java.lang.String>)
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[233,54] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable m2 of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[233,74] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable m1 of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[240,71] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[243,26] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[245,61] cannot find symbol
+[ERROR]   symbol:   method getSkills()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[245,78] cannot find symbol
+[ERROR]   symbol:   method getRequiredSkills()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[245,102] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[249,52] cannot find symbol
+[ERROR]   symbol:   method getExperiences()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[249,74] cannot find symbol
+[ERROR]   symbol:   method getExperienceLevel()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[249,99] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[250,67] cannot find symbol
+[ERROR]   symbol:   method getEducation()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[250,87] cannot find symbol
+[ERROR]   symbol:   method getRequiredQualifications()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[251,65] cannot find symbol
+[ERROR]   symbol:   method getLanguages()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[251,85] cannot find symbol
+[ERROR]   symbol:   method getRequiredLanguages()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[253,55] cannot find symbol
+[ERROR]   symbol:   method getCertifications()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[253,80] cannot find symbol
+[ERROR]   symbol:   method getRequiredCertifications()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[254,22] cannot find symbol
+[ERROR]   symbol:   method setMatchScore(double)
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[262,14] cannot find symbol
+[ERROR]   symbol:   method setCv(com.example.taskmanger.model.CV)
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[263,14] cannot find symbol
+[ERROR]   symbol:   method setJobOffer(com.example.taskmanger.model.JobOffer)
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[266,53] cannot find symbol
+[ERROR]   symbol:   method getSkills()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[266,70] cannot find symbol
+[ERROR]   symbol:   method getRequiredSkills()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[266,94] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[268,44] cannot find symbol
+[ERROR]   symbol:   method getExperiences()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[268,66] cannot find symbol
+[ERROR]   symbol:   method getExperienceLevel()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[268,91] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[269,59] cannot find symbol
+[ERROR]   symbol:   method getEducation()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[269,79] cannot find symbol
+[ERROR]   symbol:   method getRequiredQualifications()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[270,57] cannot find symbol
+[ERROR]   symbol:   method getLanguages()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[270,77] cannot find symbol
+[ERROR]   symbol:   method getRequiredLanguages()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[272,47] cannot find symbol
+[ERROR]   symbol:   method getCertifications()
+[ERROR]   location: variable cv of type com.example.taskmanger.model.CV
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[272,72] cannot find symbol
+[ERROR]   symbol:   method getRequiredCertifications()
+[ERROR]   location: variable job of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[275,14] cannot find symbol
+[ERROR]   symbol:   method setMatchScore(double)
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[276,14] cannot find symbol
+[ERROR]   symbol:   method setMatchDate(java.util.Date)
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[284,34] cannot find symbol
+[ERROR]   symbol:   method getSkillsMatch()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[285,32] cannot find symbol
+[ERROR]   symbol:   method getExperienceMatch()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[286,32] cannot find symbol
+[ERROR]   symbol:   method getEducationMatch()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[287,39] cannot find symbol
+[ERROR]   symbol:   method getLanguageMatch()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/CVService.java:[287,66] cannot find symbol
+[ERROR]   symbol:   method getCertificationMatch()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[23,45] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable candidate of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[23,75] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable candidate of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[24,40] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[24,70] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[25,29] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[26,47] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[26,78] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: variable match of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[27,33] cannot find symbol
+[ERROR]   symbol:   method getEmployer()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[28,57] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable employer of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[30,35] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[30,62] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[31,48] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[43,45] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[71,49] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[88,49] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[101,22] cannot find symbol
+[ERROR]   symbol:   method setRead(boolean)
+[ERROR]   location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[110,14] cannot find symbol
+[ERROR]   symbol:   method getRecipientRole()
+[ERROR]   location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[111,60] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.example.taskmanger.model.User
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[111,73] cannot find symbol
+[ERROR]   symbol:   method getEmployerId()
+[ERROR]   location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/service/NotificationService.java:[113,14] cannot find symbol
+[ERROR]   symbol:   method getRecipientRole()
+[ERROR]   location: variable n of type com.example.taskmanger.model.Notification
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[43,21] cannot find symbol
+[ERROR]   symbol:   method getClosingDate()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[43,58] cannot find symbol
+[ERROR]   symbol:   method getClosingDate()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[79,21] cannot find symbol
+[ERROR]   symbol:   method getClosingDate()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[79,58] cannot find symbol
+[ERROR]   symbol:   method getClosingDate()
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[82,17] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable jobOffer of type com.example.taskmanger.model.JobOffer
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[119,31] cannot find symbol
+[ERROR]   symbol:   method getJobOffer()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[119,58] cannot find symbol
+[ERROR]   symbol:   method getJobOffer()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[125,18] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[125,39] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[126,50] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[130,22] cannot find symbol
+[ERROR]   symbol:   method getMatchScore()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[131,26] cannot find symbol
+[ERROR]   symbol:   method getSkillsMatch()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[131,53] cannot find symbol
+[ERROR]   symbol:   method getExperienceMatch()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[136,26] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[136,87] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: class com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[150,26] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[150,47] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[151,58] cannot find symbol
+[ERROR]   symbol:   method getCv()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[153,34] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: variable m of type com.example.taskmanger.model.CVMatch
+[ERROR] /C:/Users/ILYES/OneDrive/Bureau/ilyes_integrÚ/Esprit-PI4-4SAE-6-2025-2026-JungleInEnglish-Backend-integrationfinalsprint1/Service/recrutement-service/src/main/java/tn/esprit/recrutement/controller/JobOfferController.java:[153,95] cannot find symbol
+[ERROR]   symbol:   method getMatchDate()
+[ERROR]   location: class com.example.taskmanger.model.CVMatch
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

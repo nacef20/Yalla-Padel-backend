@@ -1,0 +1,15 @@
+server:
+  port: 8222
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8085/realms/jungleinenglish-realm
+  config:
+    import: "optional:configserver:http://localhost:8888"
+  application:
+    name: gateway-service
+
+

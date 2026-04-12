@@ -1,0 +1,25 @@
+package com.shop.productservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.shop.productservice.dto.TotalMoneyDTO;
+import com.shop.productservice.service.OrderService;
+
+import java.math.BigDecimal;
+
+@RestController
+@RequestMapping("/api/admin/orders")
+public class AdminOrderApiController {
+
+    @Autowired
+    private OrderService orderService;
+
+    @GetMapping("/total-money")
+    public ResponseEntity<TotalMoneyDTO> getTotalMoneyForAllUsers() {
+        BigDecimal total = orderService.getTotalMoneyForAllUsers();
+        return ResponseEntity.ok(TotalMoneyDTO.builder().totalMoney(total).build());
+    }
+}

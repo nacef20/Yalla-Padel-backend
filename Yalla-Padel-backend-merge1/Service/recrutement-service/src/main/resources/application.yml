@@ -1,0 +1,19 @@
+server:
+  port: 8880
+
+spring:
+  application:
+    name: recrutement-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  datasource:
+    url: jdbc:mysql://localhost:3306/ilyesdb?createDatabaseIfNotExist=true
+    username: root
+    password: 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
