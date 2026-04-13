@@ -1,6 +1,6 @@
 package tn.esprit.reclamationreponsemicroservice.services;
 
-import org.springframework.data.domain.Page;
+import java.util.List;
 import tn.esprit.reclamationreponsemicroservice.entities.Response;
 
 
@@ -8,7 +8,7 @@ public interface IResponseService {
 
     Response createResponse(Response response);
 
-    Page<Response> getAllResponsesPaginated(int page, int size);
+    List<Response> getAllResponses();
 
     Response getResponseById(Long id);
 
