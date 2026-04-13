@@ -26,8 +26,10 @@ public class ParticipationController {
     public ResponseEntity<Participation> create(
             @Valid @RequestBody Participation participation,
             @AuthenticationPrincipal Jwt jwt) {
-        // userId : the logged-in user
-        participation.setUserId(jwt.getSubject());
+        // userId : from token only if not provided in the payload (allows Admin to add specific users)
+        if (participation.getUserId() == null || participation.getUserId().trim().isEmpty()) {
+            participation.setUserId(jwt.getSubject());
+        }
         return ResponseEntity.status(HttpStatus.CREATED).body(participationService.create(participation));
     }
 

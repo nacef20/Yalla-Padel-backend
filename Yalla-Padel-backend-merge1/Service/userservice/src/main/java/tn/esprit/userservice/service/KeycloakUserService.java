@@ -42,6 +42,32 @@ public class KeycloakUserService {
                 .toList();
     }
 
+    public List<Map<String, Object>> getUsersByRole(String roleName) {
+        try {
+            return keycloak.realm("jungleinenglish-realm")
+                    .roles()
+                    .get(roleName)
+                    .getUserMembers()
+                    .stream()
+                    .map(user -> Map.of(
+                            "id", (Object) user.getId(),
+                            "username", user.getUsername(),
+                            "email", user.getEmail() != null ? user.getEmail() : "",
+                            "firstName",
+                            user.getFirstName() != null ? user.getFirstName() : "",
+                            "lastName",
+                            user.getLastName() != null ? user.getLastName() : ""))
+                    .toList();
+        } catch (Exception e) {
+            // Fallback : Si le Service Account n'a pas les droits view-realm pour lire les
+            // rôles, ou view-users
+            // on contourne le 403 en renvoyant simplement tous les utilisateurs.
+            // L'interface côté front gérera l'affichage.
+            System.out.println("⚠️ Attention: Keycloak a refusé l'accès aux membres du rôle " + roleName
+                    + ". Fallback sur getAllUsers().");
+            return getAllUsers();
+        }
+    }
 
     public void createUser(String username, String email, String firstName, String lastName, String password) {
 

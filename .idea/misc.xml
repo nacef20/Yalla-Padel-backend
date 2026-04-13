@@ -8,9 +8,13 @@
         <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/discovery/pom.xml" />
         <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/Tournoi-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/eventmodule/pom.xml" />
+        <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/userservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/GestionGroupeChat/pom.xml" />
+        <option value="$PROJECT_DIR$/Yalla-Padel-backend-merge1/Service/email-service/pom.xml" />
       </list>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

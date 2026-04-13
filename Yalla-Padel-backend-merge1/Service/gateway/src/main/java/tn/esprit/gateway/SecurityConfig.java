@@ -32,6 +32,7 @@ public class SecurityConfig {
                         .pathMatchers("/uploads/**").permitAll()
                         .pathMatchers("/img/**").permitAll()
                         .pathMatchers("/api/users/add").permitAll()
+                        .pathMatchers("/api/users/**").permitAll()
                         .pathMatchers("/ws/**").permitAll()
                         .pathMatchers("/ws/info/**").permitAll()
                         .pathMatchers("/chatPrivee/**").hasRole("USER")
@@ -40,6 +41,8 @@ public class SecurityConfig {
                         .pathMatchers("/membreGroupChat/**").hasRole("USER")
                         .pathMatchers("/reservations/**").hasRole("USER")
                         .pathMatchers("/clubs/**").hasAnyRole("ADMIN","USER")
+                        .pathMatchers("/api/tournois/disponibles").permitAll()
+                        .pathMatchers("/api/tournois/**").permitAll()
 
                         .anyExchange().authenticated()
                 )

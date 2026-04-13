@@ -1,11 +1,17 @@
 package tn.esprit.userservice.controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import tn.esprit.userservice.service.KeycloakUserService;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import tn.esprit.userservice.service.KeycloakUserService;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -21,25 +27,32 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getUser(@PathVariable String id) {
-        var user = userService.getUserById(id);
+        try {
+            var user = userService.getUserById(id);
+            if (user == null) {
+                return ResponseEntity.notFound().build();
+            }
 
-        if (user == null) {
-            return ResponseEntity.status(404).body("User not found");
+            Map<String, Object> response = new LinkedHashMap<>();
+            response.put("id", user.getId());
+            response.put("username", user.getUsername());
+            response.put("firstName", user.getFirstName() != null ? user.getFirstName() : "");
+            response.put("lastName", user.getLastName() != null ? user.getLastName() : "");
+            response.put("email", user.getEmail() != null ? user.getEmail() : "");
+            return ResponseEntity.ok(response);
+        } catch (Exception ex) {
+            return ResponseEntity.notFound().build();
         }
-
-        return ResponseEntity.ok(Map.of(
-                "id", user.getId(),
-                "username", user.getUsername(),
-                "firstName", user.getFirstName(),
-                "lastName", user.getLastName(),
-                "email", user.getEmail()
-        ));
     }
-
 
     @GetMapping
     public ResponseEntity<List<Map<String, Object>>> getAllUsers() {
         return ResponseEntity.ok(userService.getAllUsers());
+    }
+
+    @GetMapping("/role/{roleName}")
+    public ResponseEntity<List<Map<String, Object>>> getUsersByRole(@PathVariable String roleName) {
+        return ResponseEntity.ok(userService.getUsersByRole(roleName));
     }
 
     public record CreateUserRequest(
@@ -66,23 +79,32 @@ public class UserController {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
         }
     }
+
     @GetMapping("/me")
     public Object getCurrentUser(@AuthenticationPrincipal Jwt jwt) {
+        Map<String, Object> realmAccess = jwt.getClaimAsMap("realm_access");
+        Object roles = realmAccess != null ? realmAccess.get("roles") : List.of();
 
-        return Map.of(
-                "id", jwt.getSubject(),
-                "username", jwt.getClaimAsString("preferred_username"),
-                "firstName", jwt.getClaimAsString("given_name"),
-                "lastName", jwt.getClaimAsString("family_name"),
-                "email", jwt.getClaimAsString("email"),
-                "roles", jwt.getClaimAsMap("realm_access").get("roles")
-        );
+        Map<String, Object> response = new LinkedHashMap<>();
+        response.put("id", jwt.getSubject());
+        response.put("username", jwt.getClaimAsString("preferred_username"));
+        response.put("firstName", jwt.getClaimAsString("given_name"));
+        response.put("lastName", jwt.getClaimAsString("family_name"));
+        response.put("email", jwt.getClaimAsString("email"));
+        response.put("roles", roles);
+        return response;
     }
 
     @GetMapping("/{id}/email")
     public ResponseEntity<String> getUserEmailById(@PathVariable String id) {
-        String email = userService.getUserEmailById(id);
-        return ResponseEntity.ok(email);
+        try {
+            String email = userService.getUserEmailById(id);
+            if (email == null || email.isBlank()) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(email);
+        } catch (Exception ex) {
+            return ResponseEntity.notFound().build();
+        }
     }
-
 }

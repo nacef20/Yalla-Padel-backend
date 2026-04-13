@@ -21,7 +21,7 @@ public class KeycloakConfig {
                 .realm("jungleinenglish-realm")
                 .grantType(OAuth2Constants.CLIENT_CREDENTIALS)
                 .clientId("jungleinenglish-backend")
-                .clientSecret("pQJW27kylPU2e1yo0CW4voEBy6bQqh8Z")
+                .clientSecret("3kemcGT9ZnSWNXvIPSb2moCNZJLeUt5v")
                 .build();
     }
 }

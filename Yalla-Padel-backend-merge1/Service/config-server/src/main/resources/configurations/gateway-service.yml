@@ -81,3 +81,8 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/products/**, /orders/**, /inventory/**, /categories/**, /cart/**, /api/admin/orders/**, /admin/**, /img/**
+
+        - id: tournoi-service
+          uri: lb://tournoi-service
+          predicates:
+            - Path=/api/tournois/**
