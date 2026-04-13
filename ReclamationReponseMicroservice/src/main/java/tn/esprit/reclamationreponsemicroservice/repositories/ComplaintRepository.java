@@ -19,6 +19,27 @@ public interface ComplaintRepository extends JpaRepository<Complaint, Long> {
 
 	long countByCreatedAtBetween(LocalDateTime start, LocalDateTime end);
 
+	@Query("SELECT FUNCTION('DATE', c.createdAt), COUNT(c) "
+			+ "FROM Complaint c "
+			+ "GROUP BY FUNCTION('DATE', c.createdAt) "
+			+ "ORDER BY FUNCTION('DATE', c.createdAt)")
+	List<Object[]> countComplaintsGroupedByDay();
+
+	@Query("SELECT FUNCTION('YEAR', c.createdAt), FUNCTION('MONTH', c.createdAt), COUNT(c) "
+			+ "FROM Complaint c "
+			+ "GROUP BY FUNCTION('YEAR', c.createdAt), FUNCTION('MONTH', c.createdAt) "
+			+ "ORDER BY FUNCTION('YEAR', c.createdAt), FUNCTION('MONTH', c.createdAt)")
+	List<Object[]> countComplaintsGroupedByMonth();
+
+	@Query("SELECT FUNCTION('YEAR', c.createdAt), COUNT(c) "
+			+ "FROM Complaint c "
+			+ "GROUP BY FUNCTION('YEAR', c.createdAt) "
+			+ "ORDER BY FUNCTION('YEAR', c.createdAt)")
+	List<Object[]> countComplaintsGroupedByYear();
+
+	@Query("SELECT c FROM Complaint c JOIN FETCH c.response WHERE c.status <> :pendingStatus")
+	List<Complaint> findProcessedComplaintsWithResponse(@Param("pendingStatus") ComplaintStatus pendingStatus);
+
 	@Query("SELECT c FROM Complaint c WHERE "
 			+ "(:status IS NULL OR c.status = :status) "
 			+ "AND (:keyword IS NULL OR LOWER(c.title) LIKE LOWER(CONCAT('%', :keyword, '%')) "

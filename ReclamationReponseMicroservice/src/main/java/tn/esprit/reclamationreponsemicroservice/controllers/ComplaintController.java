@@ -81,6 +81,26 @@ public class ComplaintController {
         return ResponseEntity.ok(complaintService.countComplaintsBetweenDates(start, end));
     }
 
+    @GetMapping("/stats/by-day")
+    public ResponseEntity<Map<String, Long>> countByDay() {
+        return ResponseEntity.ok(complaintService.countComplaintsByDay());
+    }
+
+    @GetMapping("/stats/by-month")
+    public ResponseEntity<Map<String, Long>> countByMonth() {
+        return ResponseEntity.ok(complaintService.countComplaintsByMonth());
+    }
+
+    @GetMapping("/stats/by-year")
+    public ResponseEntity<Map<String, Long>> countByYear() {
+        return ResponseEntity.ok(complaintService.countComplaintsByYear());
+    }
+
+    @GetMapping("/stats/average-processing-time")
+    public ResponseEntity<Double> getAverageProcessingTime() {
+        return ResponseEntity.ok(complaintService.getAverageProcessingTimeHours());
+    }
+
     @GetMapping("/stats/unprocessed-rate")
     public ResponseEntity<Double> getUnprocessedRate() {
         return ResponseEntity.ok(complaintService.getUnprocessedRate());
@@ -93,7 +113,11 @@ public class ComplaintController {
         dashboard.put("en_attente", complaintService.countByStatus(ComplaintStatus.EN_ATTENTE));
         dashboard.put("traitee", complaintService.countByStatus(ComplaintStatus.TRAITEE));
         dashboard.put("rejetee", complaintService.countByStatus(ComplaintStatus.REJETEE));
+        dashboard.put("averageProcessingTimeHours", complaintService.getAverageProcessingTimeHours());
         dashboard.put("unprocessedRate", complaintService.getUnprocessedRate());
+        dashboard.put("byDay", complaintService.countComplaintsByDay());
+        dashboard.put("byMonth", complaintService.countComplaintsByMonth());
+        dashboard.put("byYear", complaintService.countComplaintsByYear());
         return ResponseEntity.ok(dashboard);
     }
 

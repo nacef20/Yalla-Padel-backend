@@ -1,7 +1,10 @@
 package tn.esprit.reclamationreponsemicroservice.services;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -64,6 +67,62 @@ public class ComplaintServiceImplement implements IComplaintService {
     @Override
     public long countComplaintsBetweenDates(LocalDateTime start, LocalDateTime end) {
         return complaintRepository.countByCreatedAtBetween(start, end);
+    }
+
+    @Override
+    public Map<String, Long> countComplaintsByDay() {
+        List<Object[]> rows = complaintRepository.countComplaintsGroupedByDay();
+        Map<String, Long> grouped = new LinkedHashMap<>();
+        for (Object[] row : rows) {
+            String day = String.valueOf(row[0]);
+            Long count = ((Number) row[1]).longValue();
+            grouped.put(day, count);
+        }
+        return grouped;
+    }
+
+    @Override
+    public Map<String, Long> countComplaintsByMonth() {
+        List<Object[]> rows = complaintRepository.countComplaintsGroupedByMonth();
+        Map<String, Long> grouped = new LinkedHashMap<>();
+        for (Object[] row : rows) {
+            int year = ((Number) row[0]).intValue();
+            int month = ((Number) row[1]).intValue();
+            Long count = ((Number) row[2]).longValue();
+            grouped.put(year + "-" + String.format("%02d", month), count);
+        }
+        return grouped;
+    }
+
+    @Override
+    public Map<String, Long> countComplaintsByYear() {
+        List<Object[]> rows = complaintRepository.countComplaintsGroupedByYear();
+        Map<String, Long> grouped = new LinkedHashMap<>();
+        for (Object[] row : rows) {
+            String year = String.valueOf(((Number) row[0]).intValue());
+            Long count = ((Number) row[1]).longValue();
+            grouped.put(year, count);
+        }
+        return grouped;
+    }
+
+    @Override
+    public double getAverageProcessingTimeHours() {
+        List<Complaint> processedComplaints = complaintRepository.findProcessedComplaintsWithResponse(ComplaintStatus.EN_ATTENTE);
+        if (processedComplaints.isEmpty()) {
+            return 0.0;
+        }
+
+        double averageSeconds = processedComplaints.stream()
+                .filter(c -> c.getCreatedAt() != null
+                        && c.getResponse() != null
+                        && c.getResponse().getCreatedAt() != null)
+                .mapToLong(c -> Duration.between(c.getCreatedAt(), c.getResponse().getCreatedAt()).getSeconds())
+                .filter(seconds -> seconds >= 0)
+                .average()
+                .orElse(0.0);
+
+        return averageSeconds / 3600.0;
     }
 
     @Override

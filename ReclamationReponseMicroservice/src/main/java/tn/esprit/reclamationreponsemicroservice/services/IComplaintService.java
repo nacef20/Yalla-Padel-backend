@@ -2,6 +2,7 @@ package tn.esprit.reclamationreponsemicroservice.services;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 import org.springframework.data.domain.Page;
 import tn.esprit.reclamationreponsemicroservice.entities.Complaint;
 import tn.esprit.reclamationreponsemicroservice.entities.ComplaintStatus;
@@ -24,6 +25,14 @@ public interface IComplaintService {
     long countTotalComplaints();
 
     long countComplaintsBetweenDates(LocalDateTime start, LocalDateTime end);
+
+    Map<String, Long> countComplaintsByDay();
+
+    Map<String, Long> countComplaintsByMonth();
+
+    Map<String, Long> countComplaintsByYear();
+
+    double getAverageProcessingTimeHours();
 
     double getUnprocessedRate();
 
